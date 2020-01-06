@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+  background-color: #34495e;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+
+  #brailleInput {
+    margin-top: 50px;
+  }
+
+  span {
+    color: white;
+    margin: 10px 0;
+  }
+
+  #brailleText {
+    margin: 1em 0;
+    padding: 0 20px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    width: 100%;
+
+    img {
+      height: 7em;
+    }
+    span {
+      color: black
+    }
+  }
+
+  button {
+    width: 200px;
+  }
+}

@@ -1,0 +1,37 @@
+/* Variables declaration */
+$checkboxSize: 40px;
+/* End of variables declaration */
+
+#brailleInputContainer{
+	display: block;
+}
+
+#brailleInput {
+	background: #ECF0F1;
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-auto-flow: column;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 1/2*$checkboxSize;
+
+	width: 3.5*$checkboxSize;
+	height: 5*$checkboxSize;
+	column-gap: 0.5*$checkboxSize;
+
+	input[type="checkbox"] {
+		-webkit-appearance: none;
+		width: $checkboxSize;
+		height: $checkboxSize;
+		background: #ECF0F1;
+		border-radius: 100px;
+		border: 2px solid #555;
+
+		transition: background-color .25s ease-out;
+	}
+	input[type="checkbox"]:checked {
+		background: black;
+	}
+}
+		
